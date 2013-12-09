@@ -4,7 +4,7 @@
 0 1 1 r 1
 0 0 X r 3
 
-1 _ X  r 7 ;accept
+1 _ X r 7  ;accept
 1 0 X r 12 ;reject
 1 1 X r 12 ;reject
 
