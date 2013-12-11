@@ -12,7 +12,7 @@
 
 2 1 X l 12 ;reject
 2 0 X l 3
-2 X X r 7
+2 X X l 7
 
 3 0 0 l 3
 3 1 1 l 3
@@ -25,7 +25,7 @@
 
 5 0 X l 12 ;reject
 5 1 X l 6
-5 X X r 7  ;accept
+5 X X l 7 ;accept
 
 6 0 0 l 6
 6 1 1 l 6
