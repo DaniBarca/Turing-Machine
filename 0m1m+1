@@ -18,8 +18,8 @@
 3 X X l 4
 3 _ _ l 4
 
-4 0 X r 12 ;reject
-4 X X r 12 ;reject
+4 0 X l 12 ;reject
+4 X X l 12 ;reject
 4 1 X l 5
 
 5 0 0 l 5
