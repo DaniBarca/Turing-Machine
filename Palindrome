@@ -1,0 +1,64 @@
+; L(M)={w inside {0,1}* | w is a palindrome}
+
+0 0 X r 1
+0 1 X r 4
+0 X X r 7 ;accept
+
+1 0 0 r 1
+1 1 1 r 1
+1 X X l 2
+1 _ _ l 2
+
+2 1 X l 12 ;reject
+2 0 X l 3
+2 X X r 7
+
+3 0 0 l 3
+3 1 1 l 3
+3 X X r 0
+
+4 0 0 r 4
+4 1 1 r 4
+4 X X l 5
+4 _ _ l 5
+
+5 0 X l 12 ;reject
+5 1 X l 6
+5 X X r 7  ;accept
+
+6 0 0 l 6
+6 1 1 l 6
+6 X X r 0
+
+;YES
+7 X X l 7
+7 0 0 l 7
+7 1 1 l 7
+7 _ _ r 8
+
+;Erase YES
+8 X _ r 8
+8 0 _ r 8
+8 1 _ r 8
+8 _ _ l 9
+
+; Write YES
+9 _ Y r 10
+10 _ E r 11
+11 _ S r halt
+
+;NO
+12 X X l 12
+12 0 0 l 12
+12 1 1 l 12
+12 _ _ r 13
+
+;Erase NO
+13 X _ r 13
+13 0 _ r 13
+13 1 _ r 13
+13 _ _ l 14
+
+; Write NO
+14 _ N r 15
+15 _ O r halt
