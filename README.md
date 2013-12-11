@@ -1,4 +1,4 @@
 Turing-Machine
 ==============
 
-Some Turing machines
+Experimenting with some Turing machines.
